@@ -1,0 +1,302 @@
+/* CSS Document */
+/* Base */
+html,body,h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p,label,button {
+    font-family: PT Sans,serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: Droid Serif,serif;
+}
+
+legend {
+    font-family: Droid Serif,serif;
+    text-align: left;
+    margin: 0;
+    padding: 30px 0 10px;
+}
+
+form,input,label,button,textbox,fieldset {
+    display: block;
+    position: relative;
+}
+
+input,select,option,button,textarea {
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input,select,option,textarea {
+    border: none;
+    background-color: #eff0f1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+fieldset p {
+    text-align: left !important;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20px;
+    color: #999;
+}
+
+a button {
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+#submit {
+	background-color: #4ebbb5;
+    color: #fff;
+    border: none;
+	margin-top:50px;
+	font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Typography */
+.interiorWrapper h3,.interiorWrapper p {
+    text-align: center;
+}
+
+.interiorWrapper p {
+    color: #999;
+    padding: 0 0 20px;
+}
+
+#contact h3,#newsletter h3 {
+    text-align: left;
+}
+
+h4 {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Selectors */
+.pageWrapper,.interiorWrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.pageWrapper {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+}
+
+.interiorWrapper {
+    max-width: 350px;
+    padding: 20px;
+}
+
+header {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    background-color: #2d3945;
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #2d3945;
+}
+
+.doubleline {
+    height: 4px;
+    background-color: #2d3945;
+    border: none;
+}
+
+label {
+    padding: 20px 0 5px;
+    color: #999;
+}
+
+#newsletter label {
+    padding: 10px 0 0;
+}
+
+#contact input,select,button {
+    max-width: 330px;
+    width: 100%;
+    height: 50px;
+    color: #999;
+}
+
+select,option {
+    max-width: 345px;
+    width: 100%;
+    height: 50px;
+}
+
+textarea {
+    max-width: 310px;
+    width: 100%;
+    height: 120px;
+}
+
+textarea[placeholder] {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#contact input {
+    padding: 0 10px 0 5px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#contact input:focus {
+    max-width: 320px;
+    text-align: left;
+    margin: 2px 10px 2px 5px;
+    background-color: #ffc;
+}
+
+#newsletter input {
+    margin: 0 10px 0 0;
+}
+
+input[placeholder] {
+    text-align: right;
+}
+
+#contact input:last-of-type {
+    margin-bottom: 40px;
+}
+
+.inlineCheckbox {
+    display: inline-block;
+    position: relative;
+}
+
+@media screen and (min-width:760px) and (max-width:920px) {
+    .interiorWrapper {
+        max-width: 710px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .column {
+        display: inline-block;
+        position: relative;
+        max-width: 320px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left {
+        float: left;
+        clear: left;
+    }
+
+    .right {
+        float: right;
+        clear: right;
+    }
+
+    .single:nth-of-type(3) {
+        display: none;
+    }
+
+    h4 {
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width:920px) {
+    .pageWrapper {
+        margin: 0 auto;
+    }
+
+    .interiorWrapper {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    input,label,select {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    label,#newsletter p {
+        color: #2d3945;
+    }
+
+    label {
+        width: 180px;
+    }
+
+    #newsletter label:last-of-type {
+        width: 400px;
+    }
+
+    #contact input:last-of-type {
+        width: 180px;
+    }
+
+    #contact input,select {
+        position: relative;
+        max-width: 495px;
+        width: 100%;
+        height: 50px;
+        color: #999;
+    }
+
+    select,option {
+        max-width: 515px;
+        width: 100%;
+        height: 50px;
+    }
+
+    textarea,button {
+        display: block;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    textarea {
+        max-width: 680px;
+        height: 120px;
+    }
+}
