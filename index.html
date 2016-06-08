@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>The Code Review</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href=
-    "https://fonts.googleapis.com/css?family=PT+Sans|Droid+Serif:700" rel=
-    "stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>The Code Review</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href"https://fonts.googleapis.com/css?family=PT+Sans|Droid+Serif:700" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="pageWrapper">
@@ -21,21 +19,22 @@
             inbox</p>
             <hr class="doubleline">
             <hr class="single">
-            <section class="column left">
-                <form id="contact" name="contact">
-                    <fieldset>
-                        <legend>Contact Information</legend> <label for=
-                        "name">Full Name</label> <input id="name" placeholder=
-                        "Required" type="text" value=""> <label for=
-                        "email">Email Address</label> <input id="email"
-                        placeholder="Required" type="email" value="">
-                        <label for="phone">Phone Number</label> <input id=
-                        "phone" placeholder="(xxx) xxx-xxxx" type="tel" value=
-                        ""> <label for="address">Street Address</label>
-                        <input id="address" placeholder="123 Street Name" type=
-                        "text" value=""> <label for="city">City</label>
-                        <input id="city" placeholder="city" type="text" value=
-                        ""> <label>State</label> <select>
+             <form id="form" name="contact">
+                <section class="column left">
+                    <fieldset id="contact">
+                        <legend>Contact Information</legend> 
+                        <label for="name">Full Name</label> 
+                        <input name="name" id="name" placeholder="Required" type="text" value=""> 
+                        <label for="email">Email Address</label> 
+                        <input name="email" id="email" placeholder="Required" type="email" value="">
+                        <label for="phone">Phone Number</label> 
+                        <input name="phone" id="phone" placeholder="(xxx) xxx-xxxx" type="tel" value=""> 
+                        <label for="address">Street Address</label>
+                        <input name="address" id="address" placeholder="123 Street Name" type="text" value=""> 
+                        <label for="city">City</label>
+                        <input name="city" id="city" placeholder="city" type="text" value=""> 
+                        <label>State</label> 
+                        <select>
                             <option value="Choose State">
                                 Choose State
                             </option>
@@ -189,46 +188,35 @@
                             <option value="Wyoming">
                                 Wyoming
                             </option>
-                        </select> <label for="zip">Zip Code</label> <input id=
-                        "zip" placeholder="xxxxx" type="text" value="">
+                        </select> 
+                        <label for="zip">Zip Code</label> 
+                        <input name="zip" id="zip" placeholder="xxxxx" type="text" value="">
                     </fieldset>
-                </form>
             </section>
-            <hr class="single">
+            <hr id="line2" class="single">
             <section class="column right">
-                <form id="newsletter" name="newsletter">
-                    <fieldset>
+                    <fieldset class="newsletter">
                         <legend>Newsletter</legend>
-                        <p>Select the newsletter you would like to
-                        recieve</p><input class="inlineCheckbox" id="html"
-                        name="newsletter1" type="checkbox" value=
-                        "html"><label class="inlineCheckbox" for="html">HTML
-                        News</label><br>
-                        <input class="inlineCheckbox" id="css" name=
-                        "newsletter2" type="checkbox" value="css"><label class=
-                        "inlineCheckbox" for="css">CSS News</label><br>
-                        <input class="inlineCheckbox" id="javascript" name=
-                        "newsletter3" type="checkbox" value=
-                        "javascript"><label class="inlineCheckbox" for=
-                        "javascript">Javascript News</label>
+                        <p>Select the newsletter you would like to recieve</p>
+                        <input class="inlineCheckbox" type="checkbox" name="newsletter" id="html" value="html">
+                        <label class="inlineCheckbox" for="html">HTML News</label><br>
+                        <input class="inlineCheckbox" type="checkbox" name="newsletter" id="css" value="css">
+                        <label class="inlineCheckbox" for="css">CSS News</label><br>
+                        <input class="inlineCheckbox" type="checkbox" name="newsletter" id="javascript" value="javascript">
+                        <label class="inlineCheckbox" for="javascript">Javascript News</label>
                     </fieldset>
-                    <fieldset>
-                        <p>Newsletter format</p><input class="inlineCheckbox"
-                        id="html_text" name="format" type="radio" value=
-                        "html"><label class="inlineCheckbox" for=
-                        "html_text">HTML Text</label><br>
-                        <input class="inlineCheckbox" id="plain_text" name=
-                        "format" type="radio" value="plain"><label class=
-                        "inlineCheckbox" for="plain_text">Plain Text</label>
-                    </fieldset><label>Other topics you'd like to hear
-                    about</label> 
-                    <textarea placeholder=
-                    "Are there other topics that you would like to hear about. Let us know.">
-                    </textarea> 
-                    <button id="submit" name="submit" type="submit" value=
-                    "submit">Sign Up</button>
-                </form>
-            </section>
+                    <fieldset class="newsletter">
+                        <p>Newsletter format</p>
+                        <input class="inlineCheckbox" type="radio" name="format" id="html_text" value="html_text">
+                        <label class="inlineCheckbox" for="html_text">HTML Text</label><br>
+                        <input class="inlineCheckbox" type="radio" name="format" id="plain_text" value="plain_text">
+                        <label class="inlineCheckbox" for="plain_text">Plain Text</label>
+                    </fieldset>
+                    <label>Other topics you'd like to hear about</label> 
+                    <textarea placeholder="Are there other topics that you would like to hear about. Let us know."></textarea> 
+                    <button id="submit" name="submit" type="submit" value="submit">Sign Up</button>
+                </section>
+              </form>
             <h4>Copyright The Code Review</h4>
         </div><!--End interiorWrapper-->
     </div><!--End pageWrapper-->

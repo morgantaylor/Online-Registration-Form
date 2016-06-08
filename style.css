@@ -15,6 +15,7 @@ h1 {
     color: #fff;
     text-align: center;
     padding: 20px;
+	width:100%;
     font-family: Droid Serif,serif;
 }
 
@@ -90,7 +91,7 @@ a {
     padding: 0 0 20px;
 }
 
-#contact h3,#newsletter h3 {
+#contact h3,.newsletter h3 {
     text-align: left;
 }
 
@@ -128,7 +129,8 @@ header {
     width: 100%;
     height: 80px;
     background-color: #2d3945;
-    padding: 10px;
+    padding: 10px 0px;
+	overflow:hidden;
 }
 
 hr {
@@ -148,7 +150,7 @@ label {
     color: #999;
 }
 
-#newsletter label {
+.newsletter label {
     padding: 10px 0 0;
 }
 
@@ -189,7 +191,7 @@ textarea[placeholder] {
     background-color: #ffc;
 }
 
-#newsletter input {
+.newsletter input {
     margin: 0 10px 0 0;
 }
 
@@ -232,7 +234,7 @@ input[placeholder] {
         clear: right;
     }
 
-    .single:nth-of-type(3) {
+    #line2 {
         display: none;
     }
 
@@ -259,7 +261,7 @@ input[placeholder] {
         margin-bottom: 10px;
     }
 
-    label,#newsletter p {
+    label,.newsletter p {
         color: #2d3945;
     }
 
@@ -267,7 +269,7 @@ input[placeholder] {
         width: 180px;
     }
 
-    #newsletter label:last-of-type {
+    .newsletter label:last-of-type {
         width: 400px;
     }
 
