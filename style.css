@@ -75,6 +75,7 @@ a button {
     border: none;
 	margin-top:50px;
 	font-size: 18px;
+	clear:both;
 }
 
 a {
@@ -208,7 +209,7 @@ input[placeholder] {
     position: relative;
 }
 
-@media screen and (min-width:760px) and (max-width:920px) {
+@media screen and (min-width:760px) {
     .interiorWrapper {
         max-width: 710px;
         padding: 0;
@@ -234,7 +235,7 @@ input[placeholder] {
         clear: right;
     }
 
-    #line2 {
+    .line2 {
         display: none;
     }
 
@@ -242,6 +243,14 @@ input[placeholder] {
         display: block;
         clear: both;
     }
+	
+	#submit {
+		display:relative;
+		position:block;
+		max-width:300px;
+		text-align:center;
+		margin:0 auto;
+	}
 }
 
 @media screen and (min-width:920px) {
@@ -268,10 +277,10 @@ input[placeholder] {
     label {
         width: 180px;
     }
-
-    .newsletter label:last-of-type {
-        width: 400px;
-    }
+	
+	#textbox label {
+		width:300px;
+	}
 
     #contact input:last-of-type {
         width: 180px;
