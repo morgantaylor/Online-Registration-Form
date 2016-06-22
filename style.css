@@ -6,7 +6,7 @@ html,body,h1 {
 }
 
 p,label,button {
-    font-family: PT Sans,serif;
+    font-family: 'PT Sans',serif;
     margin: 0;
     padding: 0;
 }
@@ -16,11 +16,11 @@ h1 {
     text-align: center;
     padding: 20px;
 	width:100%;
-    font-family: Droid Serif,serif;
+    font-family: 'Droid Serif',serif;
 }
 
 legend {
-    font-family: Droid Serif,serif;
+    font-family: 'Droid Serif',serif;
     text-align: left;
     margin: 0;
     padding: 30px 0 10px;
@@ -244,9 +244,9 @@ input[placeholder] {
         clear: both;
     }
 	
-	#submit {
-		display:relative;
-		position:block;
+	.submit {
+		display:block;
+		position:relative;
 		max-width:300px;
 		text-align:center;
 		margin:0 auto;
